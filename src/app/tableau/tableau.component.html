@@ -1,8 +1,8 @@
 <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.js"></script>
 <!---<iframe [src]='sanitizer.bypassSecurityTrustResourceUrl(tableau.test)' width="1140" height="955" ></iframe>-->
-<p>
+<p class="select">
 
-  <select class="select" [ngModel]="selectedOptions" (change)="changeFilter($event)">
+ Please Select <select [ngModel]="selectedOptions" (change)="changeFilter($event)">
   <option *ngFor="let val of tableau.options" value= {{val}}>
     {{val}}
   </option>

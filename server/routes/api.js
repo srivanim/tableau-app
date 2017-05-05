@@ -41,9 +41,8 @@ router.get('/token', (req, res1) => {
 			}
 		);	
 	myObj = {
-   "token":authToken,
+   "token":authToken
    
-    "options":[ "Ford", "BMW", "Fiat" ]
 };
 
   res1.json(myObj);
